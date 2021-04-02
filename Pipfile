@@ -12,7 +12,7 @@ django-allauth = "*"
 pusher = "*"
 django-cors-headers = "*"
 gunicorn = "*"
-django-heroku = "*"
+django_heroku = "*"
 django-rest-api = "*"
 
 [dev-packages]
