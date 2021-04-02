@@ -84,6 +84,7 @@ button{
     background-color:#701e0d;
     color:#f0eee4;
     font-weight:bold;
+    cursor:pointer;
 }
 button:hover,button:active{
     background-color:#ab260c;
