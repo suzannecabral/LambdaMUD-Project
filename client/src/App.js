@@ -1,11 +1,15 @@
 import './App.css';
+import UserLoginForm from './User/UserLoginForm';
+import PublicView from './PublicView';
+import PrivateRoute from './api/PrivateRoute';
 
 function App() {
-  return (
-    <div className="app">
-      <h1>LambdaMUD Client</h1>
-    </div>
-  );
+    return (
+        <div className="App">
+            <PublicView/>
+
+        </div>
+    );
 }
 
 export default App;
