@@ -1,14 +1,21 @@
 import './App.css';
-import UserLoginForm from './User/UserLoginForm';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import PublicView from './PublicView';
+import GameView from './GameView';
 import PrivateRoute from './api/PrivateRoute';
 
 function App() {
     return (
-        <div className="App">
-            <PublicView/>
-
-        </div>
+        <Router>
+            <div className="App">
+                <Switch>
+                    <PrivateRoute exact path='/game/home' component={GameView} />
+                    <Route path='/'>
+                        <PublicView/>
+                    </Route>
+                </Switch>
+            </div>
+        </Router>
     );
 }
 
