@@ -9,7 +9,8 @@ function App() {
         <Router>
             <div className="App">
                 <Switch>
-                    <PrivateRoute exact path='/game/home' component={GameView} />
+                    {/* <PrivateRoute exact path='/game' component={GameView} /> */}
+                    <Route exact path='/game' component={GameView} />
                     <Route path='/'>
                         <PublicView/>
                     </Route>
